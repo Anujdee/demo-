@@ -1,0 +1,59 @@
+/* Alibaba-inspired homepage overrides */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-top,
+.header-middle,
+.header-bottom {
+    background-color: #ff6a00;
+    color: #fff;
+}
+
+.header-top a,
+.header-right a,
+.main-nav a {
+    color: #fff;
+}
+
+.header-right a:hover,
+.main-nav a:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.header-search .form-control {
+    border: 2px solid #ff6a00;
+}
+
+.header-search .btn-search {
+    background-color: #ff6a00;
+    color: #fff;
+}
+
+.category-dropdown.show-dropdown > a {
+    background-color: #e65500;
+}
+
+.product-wrap {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform .2s;
+}
+
+.product-wrap:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-wrap .product-name a {
+    color: #333;
+}
+
+.product-wrap .product-name a:hover {
+    color: #ff6a00;
+}

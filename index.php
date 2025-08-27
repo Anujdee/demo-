@@ -126,6 +126,7 @@ if (isset($_POST['submit1'])) {
 
             <!-- Default CSS -->
             <link rel="stylesheet" type="text/css" href="assets/css/demo14.min.css">
+            <link rel="stylesheet" type="text/css" href="assets/css/alibaba-theme.css">
             <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
               <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -144,7 +145,7 @@ if (isset($_POST['submit1'])) {
             <style>
                 .form-control {
                     height: 40px;
-                    border: 1px solid #da2d5b;
+                    border: 1px solid var(--primary);
                     border-radius: 3px;
                 }
         
@@ -160,8 +161,8 @@ if (isset($_POST['submit1'])) {
                 }
         
                 :root {
-                    --primary: #da2d5b;
-                    --primary-hover: #1d4ed8;
+                    --primary: #ff6a00;
+                    --primary-hover: #e65500;
                     --bg-overlay: rgba(0, 0, 0, 0.4);
                     --transition: all 0.3s ease;
                 }
@@ -299,7 +300,7 @@ if (isset($_POST['submit1'])) {
         
                 .botn-secondary {
                     background-color: #f3f4f6;
-                    border: 1.5px solid #da2d5b;
+                    border: 1.5px solid var(--primary);
                     color: #4b5563;
                 }
         
@@ -349,7 +350,7 @@ if (isset($_POST['submit1'])) {
                 }
         
                 #sy-whatshelp a.sywh-open-services {
-                    background-color: #129bf4;
+                    background-color: var(--primary);
                     color: #fff;
                     line-height: 55px;
                     margin-top: 10px;
@@ -386,7 +387,7 @@ if (isset($_POST['submit1'])) {
                 }
         
                 #sy-whatshelp .sywh-services a i {
-                    background-color: #129bf4;
+                    background-color: var(--primary);
                     color: #fff;
                     line-height: 55px;
                     margin-top: 10px;
@@ -420,7 +421,7 @@ if (isset($_POST['submit1'])) {
                 }
         
                 #sy-whatshelp .sywh-services a.call i {
-                    background-color: #da2d5b;
+                    background-color: var(--primary);
                 }
         
                 a[data-tooltip] {
@@ -713,7 +714,7 @@ if (isset($_POST['submit1'])) {
 
         .ad-cta {
             display: inline-block;
-            background-color:#da2d5b;
+            background-color: var(--primary);
             color: white;
             padding: 12px 30px;
             border-radius: 30px;
@@ -730,8 +731,8 @@ if (isset($_POST['submit1'])) {
 
         .ad-cta.secondary {
             background-color: #fff;
-            color: #da2d5b;
-            border:2px solid #da2d5b;
+            color: var(--primary);
+            border:2px solid var(--primary);
         }
 
         .ad-cta:hover {
@@ -740,12 +741,12 @@ if (isset($_POST['submit1'])) {
         }
 
         .ad-cta.primary:hover {
-            background-color: #c0392b;
-            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+            background-color: var(--primary-hover);
+            box-shadow: 0 5px 15px rgba(255, 106, 0, 0.4);
         }
 
         .ad-cta.secondary:hover {
-            background-color: #da2d5b;
+            background-color: var(--primary);
             color: #fff;
         }
 
@@ -1824,12 +1825,12 @@ if (isset($_POST['submit1'])) {
                                     <form method="get" action="" class="header-search hs-expanded hs-round bg-white br-xs d-md-flex input-wrapper mr-4 ml-4">
                                         <input type="text" class="form-control text-light border-no" name="search" id="search" placeholder="Search in..." value="<?php echo htmlspecialchars($search_query); ?>" required />
 
-                                        <button class="btn btn-search" type="submit" style="border: none; background-color: #da2d5b; color: white;">
+                                        <button class="btn btn-search" type="submit" style="border: none; background-color: var(--primary); color: white;">
                                             <i class="w-icon-search"></i>
                                     </form>
                                 </div>
                                 <div class="header-right ml-4">
-                                    <a href="contact-us" class="d-xl-show" style="background-color:#da2d5b;padding: 10px 5px;border-radius:3px"><i class="w-icon-gift"></i> &nbsp; Post Buy Requirement</a>
+                                    <a href="contact-us" class="d-xl-show" style="background-color:var(--primary);padding: 10px 5px;border-radius:3px"><i class="w-icon-gift"></i> &nbsp; Post Buy Requirement</a>
                                     <a href="product"> <i class="w-icon-sale"></i>Daily Deals</a>
                                 </div>
                             </div>
@@ -1865,7 +1866,7 @@ if (isset($_POST['submit1'])) {
                                 </div>
                                 <div class="intro-banner-wrapper col-md-4" style="background-color: #ffffff;">
                                     <div class="row">
-                                        <h4 class="title mb-3" style="color: #da2d5b;font-weight: 500;">What's Your Looking!</h4>
+                                        <h4 class="title mb-3" style="color: var(--primary);font-weight: 500;">What's Your Looking!</h4>
                                         <form id="registrationForm" method="post" enctype="multipart/form-data" class="form contact-us-form" >
                                             <div style="display: flex;">
                                             <div class="col-lg-6" style="margin-right:3px">
@@ -1879,7 +1880,7 @@ if (isset($_POST['submit1'])) {
 
                                             <div class="col-lg-12">
 
-                                                <select id="country" name="clientcountry" style="width: 100%;height: 48px;margin-bottom: 5px;border: 1px solid #da2d5b;border-radius: 3px;background:transparent" required>
+                                                <select id="country" name="clientcountry" style="width: 100%;height: 48px;margin-bottom: 5px;border: 1px solid var(--primary);border-radius: 3px;background:transparent" required>
                                                     <option value="">Select Country</option>
                                                     <option value="India">India</option>
                                                     <option value="Afghanistan">Afghanistan</option>
@@ -2137,7 +2138,7 @@ if (isset($_POST['submit1'])) {
                                                 <div class="row">
                                                     <div style="display: flex;">
                                                         <div class="col-lg-2 col-3">
-                                                            <select id="phoneCode" name="countrycode" style="width: 100%;height: 40px;border: 1px solid #da2d5b;border-radius: 3px;background:transparent">
+                                                            <select id="phoneCode" name="countrycode" style="width: 100%;height: 40px;border: 1px solid var(--primary);border-radius: 3px;background:transparent">
                                                                 <option data-countryCode="IND" value="91">(+91)</option>
                                                                 <option data-countryCode="DZ" value="213">(+213)</option>
                                                                 <option data-countryCode="AD" value="376">(+376)</option>
@@ -2357,7 +2358,7 @@ if (isset($_POST['submit1'])) {
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-10  col-9" style="margin-left: 8px;">
-                                                            <input type="number" placeholder="Enter phone number" name="clientphone" style="flex: 1;height: 40px;width: 97%;border: 1px solid #da2d5b;border-radius: 3px;" required>
+                                                            <input type="number" placeholder="Enter phone number" name="clientphone" style="flex: 1;height: 40px;width: 97%;border: 1px solid var(--primary);border-radius: 3px;" required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2372,7 +2373,7 @@ if (isset($_POST['submit1'])) {
                                             </div>
  </div>
                                             <div class="col-lg-12">
-                                                <select name="clientpiece" style="width: 100%;height: 48px;margin-bottom: 5px;margin-top:1px;border: 1px solid #da2d5b;border-radius: 3px;background:transparent" required>
+                                                <select name="clientpiece" style="width: 100%;height: 48px;margin-bottom: 5px;margin-top:1px;border: 1px solid var(--primary);border-radius: 3px;background:transparent" required>
                                                     <option value="default" selected="selected">Select Piece
                                                     </option>
                                                     <option value="Bags">Bags</option>
